@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <nav>
+        <img id = "logo" src= "../output-onlinepngtools (2).png" logo="logo" >
+        <ul>
+            <li><a href ="../index.html">About Cooking Casablanca</a></li>
+            <li><a href ="recipes.html">Recipes</a></li>
+            <li><a href ="../sign in/log_signIn.html">Sign In</a></li>
+            <li><a href ="../save for later/favoriteRec.html">Save for Later</a></li>
+            <li class="contactLink"><a href ="../contact/contact.html">Contact us</a></li>
+        </ul>
+    </nav>
+    <p>To display the recipe click the corresponding image</p>
+    <div class="container">
+        <div id="galleries"></div>
+        <article id="toDisplay"></article>
+        <form id="formAddComment">
+            <label>Insert your Name <input type="text" id="commentUserName"></label>
+            <textarea id="contentMessage" cols="30" rows="10" placeholder="Add your comment here ....."></textarea>
+            <input type="submit" value="submit your comment" id="submitComment">
+        </form>
+    </div>
+
+    <footer>
+        <div>
+            <p>I have got the recipes data and all the images from this <a href ="http://www.mymoroccanfood.com/all-recipes">Site</a></p>
+            <a href ="./useful links/usefullLinks.html" class="usefulLinks">useful Links</a>
+
+        </div>
+        <div>
+            <img class = "logo" src= "../output-onlinepngtools (2).png" logo="logo" >
+        </div>
+
+    </footer>
+
+    <script src = "recipes.js"></script>   
+</body>
+</html>

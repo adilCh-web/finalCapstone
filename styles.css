@@ -1,0 +1,626 @@
+*{
+    box-sizing: border-box;
+    padding:0px;
+    margin:0px;
+    /*border:1px solid black;*/
+    font-size:18px;
+}
+
+
+
+.contactLink{
+    background-color: brown;
+    padding:10px;
+    border-radius: 40px;
+}
+.contactLink a{
+    color:white
+}
+.contactLink a:hover{
+    color:bisque
+}
+
+ul{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width:100%;
+}
+
+
+nav li{
+    list-style-type: none;
+    align-self: flex-end;
+    display:flex;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border:2px solid brown;
+    padding:5px;
+}
+
+a{
+    color:black;
+    text-decoration: none;
+}
+a:hover{
+    color:rgb(114, 103, 103)
+}
+nav{
+
+    padding:10px;
+    margin:auto auto;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+H1{
+    text-align: center;
+    color:brown;
+    font-size: 2em;
+}
+
+
+
+main{
+    height:1300px;
+}
+
+#logo
+{
+    width:300px;
+    height:auto;
+}
+
+article{
+    margin:50px auto;
+}
+p{
+    margin:30px auto 30px 20px;
+}
+
+article ul{
+    display:unset;
+
+}
+
+article ul li{
+
+    list-style-type: disc;
+    margin:10px auto 10px 50px;;
+}
+
+h2
+{
+    margin:40px auto ;
+    text-align: center;
+    color:brown;
+    letter-spacing: 10px;
+}
+
+h5{
+    margin:20px auto 20px 30px;
+    font-weight: bold;
+
+}
+
+article img{
+    width:80%;
+    display:block;
+    margin:auto auto;
+}
+
+/*recipes.js*/
+
+#galleries img{
+    margin:auto auto;
+    display:block;
+    width:80%;
+    height:60%;
+}
+
+#galleries div{
+    overflow:hidden;
+    width:250px;
+    height:300px;
+    margin:10px auto;
+    padding:20px
+}
+
+#galleries div:hover{
+    background-color: rgb(114, 160, 160);
+}
+
+
+
+#galleries{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width:80%;
+    margin:40px auto;
+}
+
+#galleries h3{
+    text-align: center;
+    font-size: 12px;
+    letter-spacing: unset;
+    margin:10px 10px;
+    height:15%;
+    inline-size: 200px;
+    overflow: hidden;
+    align-items: center;
+}
+
+.favBtn{
+    display:block;
+    margin:auto auto;
+    border:none;
+    font-size: 30px;;
+}
+
+.commentDiv{
+    background-color: rgb(235, 175, 175);
+    margin:10px;
+    flex-direction: column;
+    padding:5px;
+    border-radius: 40px;;
+}
+.labelName{
+    font-weight:bold;
+    font-size:14px;
+    margin:10px 40px;
+}
+.labelMessage{
+    font-weight: unset;
+    font-size:16px;
+    height:inset;
+    border:1px white solid ;
+    border-radius: 40px;
+    display:block;
+    padding:10px;
+    font-style: italic;
+    margin:10px;
+}
+
+#formAddComment{
+    display:none
+
+}
+#formAddComment label{
+    font-size:16px;
+    color:brown;
+    display:block;
+    text-align: center;
+}
+
+#formAddComment label input{
+    padding:5px;
+}
+
+#formAddComment textarea{
+    border-radius: 40px;
+    padding:10px;
+    border:3px gray solid;
+    display:block;
+    margin:auto auto;
+    font-size:14px;
+}
+
+#submitComment{
+    display:block;
+    margin:30px auto 50px auto;
+    color:brown;
+    padding:10px;
+    border-color:brown}
+
+#submitComment:hover{
+    color:white;
+    background-color: brown;
+}
+
+/*favoritesRec.js*/
+
+#favItems{
+
+    margin:50px auto;
+}
+
+#favItems img{
+    width:80px;
+    height:60px;
+}
+#favItems button{
+    background-color: red;
+    height:40px;
+    font-size: 14px;
+    font-weight:bold;
+    color:white;
+    width:150px;
+    margin:auto auto;
+    display:block;
+    border:none;
+    padding:5px;
+
+}
+
+#favItems td{
+    padding:10px;
+    display: flex;
+    align-items: center;
+
+}
+
+#favItems tr{
+    display:flex;
+    flex-direction: row;
+    height:80px;
+    padding:10px;
+}
+
+#favItems tr:hover{
+    border:1px solid red;
+    background-color: rgb(221, 223, 224);
+}
+
+.favBtnClass{
+    width:150px;
+}
+
+.titleFavClass{
+    width:600px;
+}
+
+/*log_signin.html*/
+#signIn{
+    margin-top:50px;
+    border:1px gray solid;
+    padding:20px;
+    width:80%;
+    margin:50px auto 30px auto;
+}
+
+#signIn input, #createAccount input{
+    display:block;
+    margin:10px auto;
+    width:350px;
+    padding:5px 5px 5px 10px;
+    min-width:300px
+    
+}
+#signIn button ,#createAccount button{
+    margin:20px auto;
+    display:block;
+    width:300px;
+    padding:5px;
+}
+#createAccount{
+    display:none
+}
+#createAccount h3,#signIn h3{
+  font-size:18px;
+  color:orangered;
+  text-align: center;
+  inline-size:unset;
+  margin:30px auto;
+}
+.messageInfo{
+    color:red;
+    font-size:14px;
+    font-weight: italic;
+    text-align: center;
+
+
+
+}
+#logout{
+    width:300px;
+    padding:5px;
+    color:brown;
+    margin: 30px auto;
+}
+
+
+
+label{
+    display:block;
+    margin: 50px auto;
+    font-size:24px;
+    font-weight: bold;
+
+
+}
+
+input:hover{
+    border:2px black solid
+}
+
+.hyperLinkAccount{
+    padding:5px;
+    border:1px solid brown;
+    margin:30px 10px;
+}
+
+
+#backToLogIn{
+    float:left;
+    display:none;
+}
+#createAccountBtn{
+    float:right;
+}
+.userExemple{
+    background-color:rgb(36, 26, 26);
+    padding:15px;
+    font-size:70%;
+    display:inline-block;
+    margin:auto auto;
+    color:beige;
+    border-radius: 40px ;
+}
+
+.userExemple p{
+    margin:0px 0px;
+}
+.userExemple .bold{
+    font-weight: bold;
+    margin:10px auto;
+}
+
+.container{ /*added to help the footer (position fixed) to be shown at the bottom of the page always)*/
+    min-height:100vh;
+    width:90%;
+    margin:50px auto 0px auto;
+    background-color: rgb(248, 247, 247);
+    padding:20px;
+    padding-bottom: 100px; /*exactly the height of the footer so everything will be shown up*/
+}
+
+footer a{
+    color:black;
+    font-size:20px;
+    text-decoration: underline;
+}
+footer a:hover{
+    color:unset
+}
+
+.usefulLinks{
+    background-color: rgb(80, 69, 69);
+    color:rgb(39, 29, 29);
+    padding:5px;
+    border:1px solid white;
+    color:white;
+}
+.usefulLinks:hover{
+    padding:10px;
+
+}
+
+/*contact*/
+
+.contactIntro ul{
+    flex-direction: column;
+    display:flex;
+    margin-left:90px;
+}
+
+.firstLastName{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+.firstLastName input{
+    width:400px;
+    padding:10px;
+    justify-content: space-between;
+}
+
+footer{
+    background-color: brown;
+    position:fixed;
+    bottom: 0px;
+    height:100px;
+    color:white;
+    padding:10px;
+    width:100%;
+    border-top: 5px solid black;
+    display: flex;
+    justify-content: space-around;
+}
+.logo{
+    width:250px;
+}
+
+footer p{
+    margin:unset;
+    margin:5px auto 10px auto;
+}
+
+.labelFormClass{
+    margin:unset;
+    margin-top:40px;
+    margin-bottom:10px;
+    color:brown;
+    display:block;
+    font-size:18px;
+    text-decoration: underline;
+}
+.tinyText{
+    font-size:12px;
+    margin:unset;
+    margin-bottom:10px;
+    margin-left:10px;
+    color:brown;
+    font-style:oblique
+   
+}
+
+
+
+
+#emailContactForm{
+    width:100%;
+    padding:10px;
+}
+
+
+#contactFormMessage{
+    width:100%;
+    padding:20px;
+}
+
+#contactFormSubmit{
+    color:brown;
+    background-color: transparent;
+    padding:10px;
+    width:100px;
+    margin:30px auto;
+    display:block;
+
+}
+
+
+
+
+
+
+@media only screen and (max-width: 1000px) {
+    #logo{display:none;
+        }
+    nav li{
+        border:none;
+        color:white
+    }
+    nav{
+        background-color: brown;
+    }
+    nav a{
+        color:white
+    }
+    nav a:hover{
+        color:bisque
+    }
+    .contactLink{
+        padding:unset;
+
+    }
+    .container{
+        width:100%;
+    }
+
+}
+
+@media only screen and (max-width: 700px) {
+    .contactLink{
+        display:none; 
+    }
+
+}
+
+
+@media only screen and (max-width: 575px) {
+    nav ul{
+        display:flex; 
+        flex-direction: column;
+    }
+    li{
+        width:80%;
+        margin:2px auto 2px 0px
+    }
+    nav li:hover{
+        text-decoration: underline;
+    }
+    footer{
+        flex-direction: column;
+        position:unset;
+        height:200px;
+    }
+    .container{
+        min-height:unset
+        }
+    
+    #signIn{
+        border:none;
+    }
+    #signIn input, #createAccount input{
+        width:unset;
+    }
+}
+        
+
+
+
+@media only screen and (max-width: 856px) {
+    .firstLastName input{
+        width:100%;
+        display:block;
+    }
+    .firstLastName{
+        display:block;
+    }
+        
+}
+
+
+.spliter{
+    border:3px solid rgb(146, 100, 100);
+    margin:20px 0px;
+}
+
+
+/*useful links*/
+#container{
+    height:160vh;
+    width:90%;
+    margin:30px auto;
+}
+#container h2{
+    float:left;
+    font-size: 30px;
+    color:brown;
+    margin-left:50pzx;
+}
+#container p{
+    display:unset
+}
+
+#container h3{
+    font-size: 20px;
+    color:brown;
+    margin-left:20pzx;
+    inline-size: unset;
+    text-align: left;
+}
+
+#container p{
+   display:block;
+   text-align: left;
+
+}
+
+#container a{
+    float:unset;
+    color:gray;
+    text-decoration: underline;
+    font-weight: bold;
+    font-style: italic;
+    margin-left:50px;
+   
+}
+
+#container h2{
+    display:block;
+    width:100%;
+    text-align:left;
+    margin:10px auto 30px auto;
+    background-color: black;
+    padding:5px;
+  
+}
+
+
+
+
+

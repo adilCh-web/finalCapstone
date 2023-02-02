@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <nav>
+        <img id = "logo" src= "../output-onlinepngtools (2).png" logo="logo" >
+        <ul>
+            <li><a href ="../index.html">About Cooking Casablanca</a></li>
+            <li><a href ="../recipes/recipes.html">Recipes</a></li>
+            <li><a href ="log_signIn.html">Sign In</a></li>
+            <li><a href ="../save for later/favoriteRec.html">Save for Later</a></li>
+            <li class="contactLink"><a href ="../contact/contact.html">Contact us</a></li>
+        </ul>
+    </nav>
+    <a id = "createAccountBtn" class="hyperLinkAccount">Create an Account</a>
+    <a id = "backToLogIn" class="hyperLinkAccount">Back to Sign In</a>
+    <div class="container">
+
+        <form id="signIn">
+            <h3>Please Enter your Email and Password</h3>
+            <input type="email" placeholder="Email" required >
+            <input type="password" placeholder="Password" required>
+            <p class="messageInfo"></p>
+            <button type="submit">Log In</button>
+        </form>
+    
+        <form id="createAccount">
+            <h3>Would you like to Creater an account with us</h3>
+            <input type="email" placeholder="Enter your Email" required>
+            <input type="password" placeholder=" Enter a Password" required>
+            <input type="password" placeholder="Repeate the Password" required>
+            <p class="messageInfo"></p>
+            <button type="submit">Create Account In</button>
+        </form>
+        <div id="logOutDiv">
+            <label id="textLabelEmail"></label>
+            <button id="logout">Log out</button>
+        </div>
+
+    </div>
+
+    <footer>
+        <div>
+            <p>I have got the recipes data and all the images from this <a href ="http://www.mymoroccanfood.com/all-recipes">Site</a></p>
+            <a href ="useful links/usefullLinks.html" class="usefulLinks">Usefull Links</a>
+
+        </div>
+        <div>
+            <img class = "logo" src= "../output-onlinepngtools (2).png" logo="logo" >
+        </div>
+
+    </footer>
+
+ 
+    <script src="signIn_logIn.js"></script>   
+</body>
+</html>

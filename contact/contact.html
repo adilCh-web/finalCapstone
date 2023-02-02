@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <nav>
+        <img id = "logo" src= "../output-onlinepngtools (2).png" logo="logo" >
+        <ul>
+            <li><a href ="../index.html">About Cooking Casablanca</a></li>
+            <li><a href ="../recipes/recipes.html">Recipes</a></li>
+            <li><a href ="../sign in/log_signIn.html">Sign In</a></li>
+            <li><a href ="../save for later/favoriteRec.html">Save for Later</a></li>
+            <li class="contactLink"><a href ="contact.html">Contact us</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="contactIntro">
+            <p>For questions regarding :</p>
+            <ul>
+                <li>recipe/menu development</li>
+                <li>consultancy</li>
+                <li>collaboration </li>
+                <li>cooking classes</li>
+                <li>supper clubs and events</li>
+            </ul>
+            <p>Please use the form below to get in touch or send an email at <a href = "mailto: task42@capstoneproject.com">task42@capstoneproject.com</a>.</p>
+        </div>
+        <h1>Contact Form</h1>
+        <div class="spliter"></div>
+        <form id="contactForm" action="">
+            <label class="labelFormClass">Name:</label>
+            <div class="firstLastName">
+                <div>
+                    <input type="text" id ="firstName" required>
+                    <label class= "tinyText" for="firstName">FirstName</label>
+                </div>
+                <div>
+                    <input type="text" id="lastName" required>
+                    <label class= "tinyText" for="lastName">LastName</label>
+                </div>
+            </div>
+            <div>
+                <label class="labelFormClass" >Email:</label>
+                <input id="emailContactForm" type="email" required>
+
+            </div>
+            <div>
+                <label class="labelFormClass">Message:</label>
+                <textarea name="contactFormMessage" id="contactFormMessage" cols="30" rows="10" placeholder="Leave your message here ......" required></textarea>
+
+            </div>
+            <input id="contactFormSubmit"  value="Submit" type="submit">
+
+
+
+
+        </form>
+
+
+    </div>
+
+    <footer>
+        <div>
+            <p>I have got the recipes data and all the images from this <a href ="http://www.mymoroccanfood.com/all-recipes">Site</a></p>
+            <a href ="useful links/usefullLinks.html" class="usefulLinks">Usefull Links</a>
+
+        </div>
+        <div>
+            <img class = "logo" src= "../output-onlinepngtools (2).png" logo="logo" >
+        </div>
+
+    </footer>
+
+    <script>
+
+        document.getElementById("contactFormSubmit").addEventListener("click",(e)=>{
+
+            let fName=document.getElementById("firstName").value
+            let lName=document.getElementById("lastName").value
+            let email=document.getElementById("emailContactForm").value
+            let message = document.getElementById("contactFormMessage")
+            let commentsArray = JSON.parse(sessionStorage.getItem("contactFormMessages"))
+            commentsArray.push({firstName:fName,lastName:lName,email:email,message:message})
+            sessionStorage.setItem("contactFormMessages",JSON.stringify(commentsArray))
+
+
+        })
+    </script>
+
+ 
+    <!--<script src="../javascriptFiles/signIn_logIn.js" type="module"></script> -->
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
