@@ -235,11 +235,10 @@ article img{
     font-size: 14px;
     font-weight:bold;
     color:white;
-    width:150px;
     margin:auto auto;
     display:block;
     border:none;
-    padding:5px;
+    padding:10px;
 
 }
 
@@ -292,6 +291,8 @@ article img{
     display:block;
     width:300px;
     padding:5px;
+    background-color: brown;
+    color:white;
 }
 #createAccount{
     display:none
@@ -338,6 +339,11 @@ input:hover{
     padding:5px;
     border:1px solid brown;
     margin:30px 10px;
+}
+
+.hyperLinkAccount:hover,#logout{
+    background-color: brown;
+    color:white;
 }
 
 
@@ -401,7 +407,7 @@ footer a:hover{
 .contactIntro ul{
     flex-direction: column;
     display:flex;
-    margin-left:90px;
+    padding-left:90px;
 }
 
 .firstLastName{
@@ -482,88 +488,6 @@ footer p{
 }
 
 
-
-
-
-
-@media only screen and (max-width: 1000px) {
-    #logo{display:none;
-        }
-    nav li{
-        border:none;
-        color:white
-    }
-    nav{
-        background-color: brown;
-    }
-    nav a{
-        color:white
-    }
-    nav a:hover{
-        color:bisque
-    }
-    .contactLink{
-        padding:unset;
-
-    }
-    .container{
-        width:100%;
-    }
-
-}
-
-@media only screen and (max-width: 700px) {
-    .contactLink{
-        display:none; 
-    }
-
-}
-
-
-@media only screen and (max-width: 575px) {
-    nav ul{
-        display:flex; 
-        flex-direction: column;
-    }
-    li{
-        width:80%;
-        margin:2px auto 2px 0px
-    }
-    nav li:hover{
-        text-decoration: underline;
-    }
-    footer{
-        flex-direction: column;
-        position:unset;
-        height:200px;
-    }
-    .container{
-        min-height:unset
-        }
-    
-    #signIn{
-        border:none;
-    }
-    #signIn input, #createAccount input{
-        width:unset;
-    }
-}
-        
-
-
-
-@media only screen and (max-width: 856px) {
-    .firstLastName input{
-        width:100%;
-        display:block;
-    }
-    .firstLastName{
-        display:block;
-    }
-        
-}
-
-
 .spliter{
     border:3px solid rgb(146, 100, 100);
     margin:20px 0px;
@@ -620,6 +544,150 @@ footer p{
   
 }
 
+
+
+.flex_verti_centered{
+    display:flex;
+    align-items: center;
+    width:100%;
+    justify-content: space-around;
+}
+
+
+
+@media only screen and (max-width: 1000px) {
+    #logo{display:none;
+        }
+    nav li{
+        border:none;
+        color:white
+    }
+    nav{
+        background-color: brown;
+    }
+    nav a{
+        color:white
+    }
+    nav a:hover{
+        color:bisque
+    }
+    .contactLink{
+        padding:unset;
+
+    }
+    .container{
+        width:100%;
+    }
+
+    .titleFavClass{
+        width:400px;
+        overflow: hidden;
+    }
+    tr{
+        height:unset;
+    }
+
+}
+
+
+@media only screen and (max-width: 750px) {
+    .titleFavClass{
+        width:300px;}
+    td{
+        font-size:15px;
+    }
+}
+
+
+
+@media only screen and (max-width: 700px) {
+    .contactLink{
+        display:none; 
+    }
+
+}
+
+
+
+@media only screen and (max-width: 575px) {
+    nav ul{
+        display:flex; 
+        flex-direction: column;
+    }
+    li{
+        width:80%;
+        margin:2px auto 2px 0px
+    }
+    nav li:hover{
+        text-decoration: underline;
+    }
+    footer{
+        flex-direction: column;
+        position:unset;
+        height:200px;
+    }
+    .container{
+        min-height:unset
+        }
+    
+    #signIn{
+        border:none;
+    }
+    #signIn input, #createAccount input{
+        width:unset;
+    }
+    .titleFavClass{
+        width:200px;
+        overflow: hidden;
+    
+        margin-right:10px;
+        font-size:12px;
+    }
+
+}
+        
+
+
+
+@media only screen and (max-width: 856px) {
+    .firstLastName input{
+        width:100%;
+        display:block;
+    }
+    .firstLastName{
+        display:block;
+    }
+        
+}
+
+@media only screen and (max-width: 380px) {
+    #signIn input, #createAccount input{
+        min-width:unset;}
+    #backToLogIn{
+        float:none;
+    }
+    .hyperLinkAccount{
+        width:120px;
+    }
+    #signIn button, #createAccount button{
+        width:200px;
+    }
+    #signIn{
+        width:100%
+    }
+
+    #favItems img {
+        width: 60px;
+        height: 40px;
+    }
+    .titleFavClass{
+        width:150px;
+        font-size:10px;
+        font-weight: bold;
+    }
+
+    
+}
 
 
 

@@ -24,7 +24,7 @@ function createElement(){
             imgData.className = "favImgClass"
             //we create a button to remove the save for later item
             let button = document.createElement("button")
-            button.textContent = "remove from Favorites"
+            button.innerHTML = `<i class="fa fa-trash" aria-hidden="true"></i>`
             button.onclick = function(){
                 //we reassign it again f
                 userConnected = JSON.parse(sessionStorage.getItem("userConnected"))
